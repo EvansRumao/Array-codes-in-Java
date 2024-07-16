@@ -2,7 +2,16 @@ import java.util.Scanner;
 
 public class Compare {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+         int [] Arr1=Arrayutility.inputArray();
+        int[] Arr2=Arrayutility.inputArray();
+        boolean B=Compare.compare(Arr1,Arr2);
+        if(B){
+            System.out.println("the Array is same");
+        }else {
+            System.out.println("the Array is different");
+        }
+        
+            
 
     }
     public static boolean compare(int[] arr1,int[]arr2)
